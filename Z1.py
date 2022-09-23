@@ -1,8 +1,8 @@
-def InputNumbers(inputText):
+def InputNumber():
     is_OK = False
     while not is_OK:
         try:
-            number = int(input(f"{inputText}"))
+            number = int(input("Введите число: "))
             is_OK = True
         except ValueError:
             print("Это не число!")
@@ -18,5 +18,5 @@ def checkNumber(num):
         print("число вне пределов 7 дней")
 
 
-num = InputNumbers("Введите число: ")
+num = InputNumber()
 checkNumber(num)
